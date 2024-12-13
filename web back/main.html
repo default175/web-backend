@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to France - My Favorite Country</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .attraction-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .attractions-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .attraction-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .attraction-item h3 {
+            color: #0073e6;
+            margin-top: 1rem;
+        }
+
+        .attraction-item p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .attraction-item {
+                width: 100%;
+            }
+        }
+
+        .review-section {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .review-section button {
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .review-section button:hover {
+            background-color: #005bb5;
+        }
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            alert("Welcome to the amazing France!");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="france.html">Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="fade-in">Welcome to France!</h1>
+        <section id="attractions">
+            <h2 class="fade-in">Top Attractions in France</h2>
+            <div class="attractions-list">
+                <div class="attraction-item fade-in">
+                    <img src="https://i.pinimg.com/736x/96/53/3f/96533fd3daa991d8fb798da244b6573c.jpg" alt="Eiffel Tower" class="photo">
+                    <h3>Eiffel Tower</h3>
+                    <p class="attraction-description">The Eiffel Tower is one of the most recognizable landmarks in the world, offering stunning views of Paris.</p>
+                </div>
+                <div class="attraction-item fade-in">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/5270077/img_id6445699749017990342.jpeg/orig?text=Louvre+Museum" alt="Louvre Museum" class="photo">
+                    <h3>Louvre Museum</h3>
+                    <p class="attraction-description">The Louvre is home to thousands of works of art, including the famous painting of Mona Lisa.</p>
+                </div>
+                <div class="attraction-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/1200px-Mont-Saint-Michel_vu_du_ciel.jpg?text=Mont+Saint-Michel" alt="Mont Saint-Michel" class="photo">
+                    <h3>Mont Saint-Michel</h3>
+                    <p class="attraction-description">A medieval island commune with breathtaking views and a rich history dating back to the 8th century.</p>
+                </div>
+                <div class="attraction-item fade-in">
+                    <img src="https://i.pinimg.com/736x/7d/4c/18/7d4c186923d2f4cc22004732de58ec29.jpg" alt="Palace of Versailles" class="photo">
+                    <h3>Palace of Versailles</h3>
+                    <p class="attraction-description">The Palace of Versailles is a symbol of the grandeur of French monarchy, renowned for its stunning gardens and lavish interiors.</p>
+                </div>
+            </div>
+        </section>
+        <section id="cuisine">
+            <h2 class="fade-in">French Cuisine</h2>
+            <div class="row">
+                <div class="col-md-6 fade-in">
+                    <img src="https://avatars.mds.yandex.net/i?id=c816fd61a54632906141e060368df759_l-4937470-images-thumbs&n=13?text=Croissants" alt="Croissants" class="photo">
+                    <p class="attraction-description">From freshly baked croissants in the morning to coq au vin in the evening, French cuisine is diverse and flavorful.</p>
+                </div>
+                <div class="col-md-6 fade-in">
+                    <img src="https://avatars.mds.yandex.net/i?id=1b4a011574404d5d2fdd52829d551023_l-4947185-images-thumbs&n=13?text=French+Wine" alt="French Wine" class="photo">
+                    <p class="attraction-description">French wine regions such as Bordeaux and Burgundy produce world-renowned wines.</p>
+                </div>
+                <div class="col-md-6 fade-in">
+                    <img src="https://t4.ftcdn.net/jpg/00/60/27/31/360_F_60273160_i30xiUjFQBx1CXg45mlDc2sMPcgcTID1.jpg" alt="Quiche Lorraine" class="photo">
+                    <p class="attraction-description">A savory French pie made with eggs, cream, cheese, and bacon, originating from the Lorraine region.</p>
+                </div>
+            </div>
+        </section>
+        <section id="facts">
+            <h2 class="fade-in">Interesting Facts About France</h2>
+            <p class="fade-in">Did you know? France is the most visited country in the world with more than 89 million tourists each year. It is also home to over 400 types of cheese and is renowned for its rich history, beautiful landscapes, and exceptional art.</p>
+        </section>
+        <section id="reviews" class="review-section">
+            <h2 class="fade-in">Leave a Review</h2>
+            <textarea rows="4" placeholder="Share your experience about France..."></textarea><br>
+            <button>Submit Review</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 France Info</p>
+    </footer>
+</body>
+</html>
